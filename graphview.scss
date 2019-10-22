@@ -1,0 +1,183 @@
+.conceptG text {
+    pointer-events: none;
+    font-size: 12px;
+    fill: #3d70b2;
+}
+
+marker {
+    fill: #5a6872;
+}
+
+.relationship_type {
+    font-size: 12px;
+}
+
+
+g.conceptG rect {
+    fill: #fff;
+    stroke: #3d70b2;
+    stroke-width: 1px;
+}
+
+
+g.conceptG:hover rect {
+    stroke: #5596e6;
+    stroke-width: 2px;
+    fill: #fff;
+}
+
+g.conceptG image:hover {
+    cursor: pointer;
+}
+
+g.conceptG g.toolbar image:hover {
+    opacity: .7;
+}
+
+g.selected rect {
+    stroke: #5596e6;
+    stroke-width: 2px;
+}
+
+path.link {
+    fill: none;
+    stroke: #152935;
+    stroke-width: 3px;
+    cursor: pointer;
+}
+
+path.link:hover {
+    stroke: #6fedd8;
+}
+
+g.connect-node rect {
+    fill: #BEFFFF;
+}
+
+path.link.hidden {
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: #ff5050;
+}
+
+.graph>rect {
+    fill: #dfe3e6;
+}
+
+.d3Graph {
+    background-color: #f5f7fa;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    border: 1px solid #8c9ba5;
+    border-top: none;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.d3Graph svg {
+    background-color: #dfe3e6;
+}
+
+
+.minimap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.minimapRect {
+    fill: #f5f7fa;
+    stroke: #5a6872;
+    stroke-width: 3px;
+}
+
+.miniNodes rect {
+    fill: #dfe3e6;
+}
+
+.minimapFrame rect {
+    stroke: #3d70b2;
+    stroke-width: 1px;
+    fill: #2d3f49;
+    fill-opacity: 0.2;
+}
+
+.drag-node {
+    border: none;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    color: #000;
+    cursor: move;
+    font-size: 15px;
+    padding: 0 0.25rem;
+}
+
+.graph-sidenav-container {
+    max-height: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+.nodelist-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.scroll-container {
+    position: relative;
+    /* max-height: 50px; */
+    max-width: 100%;
+}
+
+.scroll-content {
+    max-width: 100%;
+    /* white-space: nowrap; */
+    width: auto;
+    height: auto;
+}
+
+.graph-toolbar {
+    border: 1px solid #8c9ba5;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+}
+
+.graph-toolbar .util-zip::before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #8c9ba5;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+#slider-input-box {
+    width: 25px;
+    min-width: 25px;
+    padding: 0;
+    height: 20px;
+}
+
+.drag-node.slider-node {
+    padding: 0;
+    margin: 0;
+}
+
+.drag-node.slider-node .bx--slider-container {
+    min-width: 180px;
+    width: 180px;
+}
+
+.bx--form-item.entity_field {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+}
